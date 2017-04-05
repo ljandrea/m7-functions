@@ -35,6 +35,7 @@ DescribeDifference <- function(a, b) {
 # Pass two vectors to your `DescribeDifference` function
 c <- seq(1, 100)
 d <- c('hi', 'hello', 'hola')
+DescribeDifference(c,d)
 
 ### Bonus ###
 
