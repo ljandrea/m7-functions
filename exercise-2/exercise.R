@@ -3,12 +3,11 @@
 # Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
 CompareLength <- function(a, b) {
-  length.a <- length(a)
-  length.b <- length(b)
-  max.length <- max(length.a, length.b)
-  min.length <- min(length.a, length.b)
+  max.length <- max(length(a), length(b))
+  min.length <- min(length(a), length(b))
   answer <- max.length - min.length
-  return (answer)
+  answer.sentence <- paste("The difference in lengths is", answer, sep=" ")
+  return (answer.sentence)
 }
 
 # Pass two vectors of different length to your `CompareLength` function
